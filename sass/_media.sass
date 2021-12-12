@@ -1,0 +1,202 @@
+@media (max-width: 1200px)
+    .hero
+        &__container
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &__start
+            text-align: center
+        &__img
+            width: 70%
+            &-bnb
+                width: 150px
+                top: -57px
+                left: 122px
+            &-eth
+                width: 100px
+                top: 35px
+                left: 431px
+            &-btc
+                width: 250px
+                top: 242px
+                left: 30px
+        &__end
+            margin-top: 75px
+            text-align: center
+        &__title
+            font-size: 40px
+            width: 575px
+        &__subtitle
+            margin: 20px auto 0 auto
+        &__btn
+            margin-top: 30px
+
+    .featured
+        &__logos
+            margin-top: 60px
+            flex-direction: column
+        &__link
+            margin-top: 40px
+            &:first-child
+                margin-top: 0
+
+    .service
+        &__top
+            flex-direction: column
+            justify-content: center
+            text-align: center
+        &__subtitle
+            margin-top: 20px
+        &__bottom
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__column
+            margin-top: 35px
+            text-align: center
+            &:first-child
+                margin-top: 0
+            &-wrapper
+                flex-direction: column
+            &-title
+                margin: 15px 0 0 0
+            &-text
+                margin-left: 0
+
+    .cryptocurrency
+        &__img
+            top: 25%
+        &__container
+            flex-direction: column
+            justify-content: center
+        &__wrapper
+            margin-top: 500px
+            text-align: center
+        &__title
+            width: auto
+            span
+                display: block
+        &__subtitle
+            margin: 20px auto 0 auto
+        &__btn
+            margin-top: 30px
+
+    .pricing
+        &__cards
+            justify-content: center
+            grid-template-columns: repeat(2, 265px)
+            gap: 20px
+
+    .reviews
+        padding-bottom: 100px
+        &__container
+            flex-direction: column
+        &__start
+            margin-top: 150px
+            order: 2
+            text-align: center
+        &__img
+            display: block
+            margin: 0 auto
+        &__subtitle
+            margin: 20px auto 0 auto
+        &__btn
+            margin-top: 30px
+
+    .footer
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__start
+            text-align: center
+        &__socials
+            justify-content: center
+        &__text
+            width: 300px
+        &__end
+            margin-top: 75px
+            flex-direction: column
+            justify-content: center
+            text-align: center
+        &__list
+            margin: 50px 0 0 0
+            &:first-child
+                margin-top: 0
+
+@media (max-width: 768px)
+    .title
+        font-size: 30px
+
+    .subtitle
+        font-size: 18px
+
+    .header
+        &__start
+            display: block
+            text-align: center
+            margin: 0 auto
+        &__menu
+            &-list
+                margin-top: 25px
+        &__logo
+            margin-right: 0
+        &__end
+            display: none
+
+    .hero
+        &__end
+            margin-top: 25px
+        &__title
+            width: 427px
+            margin: 0 auto
+        &__img
+            width: 60%
+            &-bnb, &-eth, &-btc
+                display: none
+
+    .service
+        &__title
+            width: auto
+        &__subtitle
+            width: auto
+
+    .cryptocurrency
+        &__img
+            width: 80%
+
+    .reviews
+        &__img
+            width: 90%
+            &-1, &-2, &-3, &-4, &-5, &-6
+                display: none
+        &__text
+            padding: 15px
+            font-size: 14px
+            width: 70%
+
+@media (max-width: 590px)
+    .title
+        width: auto
+        font-size: 20px
+
+    .subtitle
+        width: auto
+        font-size: 16px
+
+    .hero
+        &__end
+            margin-top: 30px
+        &__title, &__subtitle
+            width: auto
+
+    .pricing
+        &__cards
+            grid-template-columns: repeat(1, 265px)
+        &__subscription
+            width: 250px
+            &::after, &::before
+                display: none
+
+    .cryptocurrency
+        &__img
+            width: 100%
