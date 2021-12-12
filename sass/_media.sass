@@ -183,11 +183,42 @@
         width: auto
         font-size: 16px
 
+    .burger-menu
+        display: block
+
+    .header
+        &__start
+            margin: 0
+            display: flex
+            width: 100%
+            justify-content: space-between
+        &__menu
+            display: none
+            position: fixed
+            padding: 10px 20px
+            border: 2px solid #666666
+            right: 25px
+            top: 75px
+            border-radius: 20px
+            background: #FFFFFF
+            &-list
+                display: block
+                margin: 0
+            &-item
+                margin: 0 auto
+            &_active
+                display: block
+
     .hero
         &__end
             margin-top: 30px
         &__title, &__subtitle
             width: auto
+
+    .service
+        &__column
+            &-text
+                width: auto
 
     .pricing
         &__cards

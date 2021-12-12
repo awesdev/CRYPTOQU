@@ -1,0 +1,32 @@
+.burger-menu
+    width: 40px
+    display: none
+    &__item
+        position: relative
+        display: block
+        background: #333333
+        height: 2px
+        width: 100%
+        transition: transform .3s ease
+        &::after, &::before
+            position: absolute
+            left: 0
+            content: ''
+            background: #333333
+            height: 2px
+            width: 100%
+            transition: transform .3s ease
+        &::after
+            top: -10px
+        &::before
+            top: 10px
+    &_active
+        .burger-menu
+            &__item
+                background: transparent
+                &::after
+                    top: 0
+                    transform: rotate(45deg)
+                &::before
+                    top: 0
+                    transform: rotate(-45deg)

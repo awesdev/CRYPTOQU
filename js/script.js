@@ -33,4 +33,10 @@ $(document).ready(function () {
             scrollTop: $(".pricing").offset().top
         }, 200);
     });
+
+    // Burger menu
+    $('.burger-menu').on('click', function(){
+        $(this).toggleClass('burger-menu_active');
+        $('.header__menu').toggleClass('header__menu_active');
+    })
 })
