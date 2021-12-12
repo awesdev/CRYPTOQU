@@ -1,0 +1,168 @@
+.pricing
+    padding: 100px 0 136px 0
+    &__title
+        margin: 0 auto
+        width: 475px
+        text-align: center
+    &__subtitle
+        margin-top: 20px
+        text-align: center
+    &__subscription
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 6px
+        margin: 76px auto 0 auto
+        width: 320px
+        background: #F2F1F8
+        border-radius: 40px
+        &::after
+            position: absolute
+            content: 'Save 35%'
+            top: -30px
+            left: -107px
+            color: #A16F98
+            font-weight: 600
+            font-size: 16px
+            line-height: calc((24 / 16) * 100%)
+        &::before
+            position: absolute
+            content: ''
+            width: 65px
+            height: 20px
+            top: 0px
+            left: -65px
+            background: url(../img/pricing/arrow.svg) center center / cover no-repeat
+        &-val
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 160px
+            height: 68px
+            font-weight: 600
+            font-size: 20px
+            line-height: calc((30 / 20) * 100%)
+            cursor: pointer
+            &--yearly
+                color: #AB79A2
+            &-mounthly
+                color: #8680B2
+            &--active
+                background: #FFFFFF
+                border-radius: 40px
+    &__cards
+        margin-top: 72px
+        display: grid
+        grid-template-columns: repeat(4, 265px)
+        justify-content: space-between
+    &__card
+        position: relative
+        padding: 24px
+        background: #FCFCFC
+        border: 2px solid #EDECF3
+        border-radius: 20px
+        cursor: pointer
+        &::before
+            position: absolute
+            content: ''
+            width: 100%
+            height: 100%
+            left: 0
+            top: 0
+            z-index: -1
+            border-radius: 20px
+            background-image: linear-gradient(157.89deg, rgba(161, 179, 223, 0.5625) 1.46%, rgba(152, 185, 217, 0.42) 24.95%, rgba(140, 191, 239, 0.48) 50.02%, rgba(185, 132, 189, 0.435) 78.22%, rgba(197, 124, 180, 0.555) 95.97%)
+            background-size: 200% 200%
+            opacity: 0
+            transition: opacity 1s ease
+        &:hover
+            background: transparent
+            &::before
+                opacity: 1
+                animation: gradient 5s ease infinite
+            .pricing
+                &__name
+                    color: #FFFFFF
+                &__price, &__price-val, &__currency, &__term
+                    color: #FFFFFF
+                &__item
+                    color: #FFFFFF
+                    background: url(../img/pricing/check-light.svg) left center no-repeat
+                &__btn
+                    color: #FFFFFF
+                    background-position: 0
+    &__top
+        display: flex
+        align-items: center
+        justify-content: center
+    &__name
+        margin-right: 5px
+        color: #333333
+        font-weight: 600
+        font-size: 20px
+        line-height: calc((30 / 20) * 100%)
+        transition: color .3s ease
+    &__price
+        position: relative
+        margin-top: 27px
+        text-align: center
+        transition: color .3s ease
+        &-val
+            margin-right: 5px
+            color: #48455E
+            font-weight: 600
+            font-size: 60px
+            line-height: calc((90 / 60) * 100%)
+            transition: color .3s ease
+    &__currency
+        position: relative
+        top: -25px
+        margin-right: 5px
+        font-weight: 600
+        font-size: 20px
+        line-height: calc((30 / 20) * 100%)
+        color: #48455E
+        transition: color .3s ease
+    &__term
+        color: #706D86
+        font-weight: 500
+        font-size: 12px
+        line-height: calc((18 / 12) * 100%)
+        transition: color .3s ease
+    &__list
+        margin-top: 24px
+    &__item
+        margin-top: 12px
+        padding-left: 24px
+        font-size: 14px
+        line-height: calc((21 / 14) * 100%)
+        color: #5C5972
+        background: url(../img/pricing/check-dark.svg) left center no-repeat
+        transition: background .3s ease
+        &:first-child
+            margin-top: 0
+    &__btn
+        margin-top: 32px
+        display: block
+        text-align: center
+        padding: 10px 0
+        font-weight: 600
+        font-size: 14px
+        line-height: calc((21 / 14) * 100%)
+        color: #2A2740
+        background-image: linear-gradient(45deg, #2A2740 50%, transparent 50%)
+        background-position: 100%
+        border: 2px solid #2A2740
+        border-radius: 6px
+        &:hover
+            color: #FFFFFF
+            background-position: 0
+
+@keyframes gradient
+    0%
+        background-position: 50% 50%
+    50%
+        background-position: 100% 100%
+    100%
+        background-position: 0% 50%

@@ -1,0 +1,64 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 50
+    padding: 20px 0
+    background: #FFFFFF
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__start, &__end
+        display: flex
+        align-items: center
+    &__logo
+        margin-right: 111px
+    &__menu
+        &-list
+            display: flex
+            align-items: center
+        &-item
+            margin-right: 44px
+            &:last-child
+                margin-right: 0
+        &-link
+            position: relative
+            color: #666666
+            font-size: 14px
+            line-height: calc((17 / 14) * 100%)
+            transition: opacity .3s ease
+            &::before
+                content: ''
+                position: absolute
+                left: 50%
+                bottom: -5px
+                transform: translate(-50%, 0)
+                height: 1px
+                width: 0
+                background: #333333
+                transition: width .3s ease
+            &:hover
+                color: #333333
+                &::before
+                    width: 110%
+    &__lang
+        display: flex
+        align-items: center
+        &-val
+            margin-right: 5px
+            color: #333333
+            font-weight: 500
+            font-size: 12px
+            line-height: calc((18 / 12) * 100%)
+        &-img
+            margin-right: 5px
+        &-arrow
+            display: block
+            margin-top: 6px
+            width: 6px
+            height: 6px
+            border: 6px solid transparent
+            border-top: 6px solid #333333
+            cursor: pointer

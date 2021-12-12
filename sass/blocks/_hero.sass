@@ -1,0 +1,53 @@
+.hero
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 101px 0px 79px 0px
+    &__container
+        display: flex
+        justify-content: space-between
+    &__start
+        position: relative
+    &__img
+        &-bnb, &-eth, &-btc
+            position: absolute
+            z-index: 1
+            animation: crypto-anim 3s infinite ease-in-out
+        &-bnb
+            top: -70px
+            left: 57px
+        &-eth
+            top: 62px
+            left: 476px
+        &-btc
+            top: 395px
+            left: -86px
+    &__end
+        margin-top: 40px
+    &__title
+        width: 444px
+        color: #333333
+        font-weight: 700
+        font-size: 52px
+        line-height: calc((78 / 52) * 100%)
+    &__subtitle
+        margin-top: 32px
+        width: 472px
+    &__btn
+        color: #FFFFFF
+        margin-top: 32px
+        background-image: linear-gradient(45deg, #2A2740 50%, transparent 50%)
+        border-radius: 8px
+        border: 2px solid #2A2740
+        &:hover
+            color: #2A2740
+            background-position: 100%
+
+@keyframes crypto-anim
+    0%
+        transform: translate(0, 20px)
+    50%
+        transform: translate(0, 40px)
+    100%
+        transform: translate(0, 20px)

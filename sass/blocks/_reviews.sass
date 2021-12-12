@@ -1,0 +1,86 @@
+.reviews
+    padding: 80px 0 206px 0
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__title
+        width: 380px
+    &__subtitle
+        margin-top: 20px
+        width: 340px
+    &__btn
+        margin-top: 36px
+        font-weight: 600
+        color: #2A2740
+        background-image: linear-gradient(45deg, #2A2740 50%, transparent 50%)
+        background-position: 100%
+        border: 2px solid #2A2740
+        border-radius: 6px
+        &:hover
+            color: #FFFFFF
+            background-position: 0
+    &__end
+        position: relative
+    &__img
+        margin-right: 55px
+        &-1, &-2, &-3, &-4, &-5, &-6
+            position: absolute
+            animation: human-anim 3s infinite ease-in-out
+        &-1
+            top: 54px
+            left: -19px
+        &-2
+            top: 25px
+            right: 83px
+        &-3
+            top: 132px
+            right: -35px
+        &-4
+            top: 315px
+            right: 25px
+        &-5
+            top: 363px
+            left: -33px
+        &-6
+            top: 233px
+            left: -89px
+    &__text
+        position: absolute
+        left: 50%
+        top: 100%
+        transform: translate(-50%, -50%)
+        width: 430px
+        background: #FFFFFF
+        box-shadow: 0px 4px 40px rgba(78, 28, 95, 0.08)
+        border-radius: 30px
+        color: #848484
+        padding: 28px 40px
+        font-size: 16px
+        line-height: calc((24 / 16) * 100%)
+        span
+            position: relative
+            display: block
+            margin-top: 24px
+            color: #333333
+            font-weight: 600
+            font-size: 16px
+            line-height: calc((24 / 16) * 100%)
+            padding-left: 36px
+            &::before
+                position: absolute
+                content: ''
+                width: 28px
+                height: 1px
+                background: #333333
+                left: 0
+                top: 50%
+                transform: translate(0, -50%)
+
+@keyframes human-anim
+    0%
+        transform: translate(0, 20px)
+    50%
+        transform: translate(0, 40px)
+    100%
+        transform: translate(0, 20px)
